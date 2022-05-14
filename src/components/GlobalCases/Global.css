@@ -26,3 +26,20 @@
     color: white;
     border-radius: 2px;
 }
+
+@media only screen and (max-width: 450px) {
+    .main__parent {
+        /* border: 1px solid red; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .cases__box {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+}

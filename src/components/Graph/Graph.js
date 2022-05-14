@@ -47,8 +47,9 @@ function Graph() {
                         <Legend />
                         <Line dataKey="value" stroke='red' />
                     </LineChart>
-                </ResponsiveContainer> */}
-            <ResponsiveContainer width="90%" aspect={3}>
+                </ResponsivedContainer> */}
+
+            <ResponsiveContainer width="90%" aspect={3} >
                 <BarChart data={newData} margin={{
                     top: 5,
                     right: 50,
@@ -62,6 +63,7 @@ function Graph() {
                     <Bar dataKey="value" fill="rgb(0, 106, 255)" />
                 </BarChart>
             </ResponsiveContainer>
+
 
         </>
     )

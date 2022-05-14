@@ -25,3 +25,14 @@
     cursor: pointer;
     /* outline: none; */
 }
+
+@media only screen and (max-width: 450px) {
+    .inner__search {
+        /* border: 1px solid red; */
+        background-color: rgb(231, 124, 67);
+    }
+
+    .search__bar {
+        width: 100%;
+    }
+}
