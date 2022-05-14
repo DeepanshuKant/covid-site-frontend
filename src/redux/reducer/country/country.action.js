@@ -7,7 +7,7 @@ export const getCountry = (countryName) => async (dispatch) => {
         const getCountryList = await axios(
             {
                 method: "GET",
-                url: `http://localhost:3001/cases/country/${countryName}`
+                url: `https://covidbackendproject.herokuapp.com/cases/country/${countryName}`
             }
         )
 

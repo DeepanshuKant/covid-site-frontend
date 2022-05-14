@@ -8,7 +8,7 @@ export const getAllGlobal = () => async (dispatch) => {
         const globalData = await axios(
             {
                 method: "GET",
-                url: "http://localhost:3001/cases/global"
+                url: "https://covidbackendproject.herokuapp.com/cases/global"
             }
         )
         return dispatch({ type: GET_GLOBAL, payload: globalData.data })
