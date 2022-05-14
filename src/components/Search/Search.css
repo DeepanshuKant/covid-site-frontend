@@ -1,0 +1,27 @@
+.inner__search {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.search__bar {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(0, 106, 255);
+    outline: none;
+    color: black;
+}
+
+.search__button {
+    padding: 10px;
+    color: black;
+    border: 1px solid rgb(0, 106, 255);
+}
+
+.search__button:hover {
+    cursor: pointer;
+    /* outline: none; */
+}
