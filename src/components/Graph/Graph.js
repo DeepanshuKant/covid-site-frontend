@@ -49,21 +49,22 @@ function Graph() {
                     </LineChart>
                 </ResponsivedContainer> */}
 
-            <ResponsiveContainer width="90%" aspect={3} >
-                <BarChart data={newData} margin={{
-                    top: 5,
-                    right: 50,
-                    left: 50,
-                    bottom: 5,
-                }}>
-                    <XAxis dataKey="case" />
-                    <YAxis dataKey="value" />
-                    <Tooltip />
-                    <Legend dataKey="value" />
-                    <Bar dataKey="value" fill="rgb(0, 106, 255)" />
-                </BarChart>
-            </ResponsiveContainer>
-
+            <div className="graph__main__container">
+                <ResponsiveContainer aspect={3} >
+                    <BarChart data={newData} margin={{
+                        top: 5,
+                        right: 50,
+                        left: 50,
+                        bottom: 5,
+                    }}>
+                        <XAxis dataKey="case" fontSize="16px" />
+                        <YAxis dataKey="value" />
+                        <Tooltip />
+                        <Legend dataKey="value" />
+                        <Bar dataKey="value" fill="rgb(0, 106, 255)" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
 
         </>
     )

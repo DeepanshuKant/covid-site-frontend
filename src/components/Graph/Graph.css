@@ -1,0 +1,7 @@
+.graph__main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 70px; */
+    border: 1px solid red;
+}

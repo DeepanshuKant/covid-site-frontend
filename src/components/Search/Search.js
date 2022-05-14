@@ -15,6 +15,7 @@ function Search() {
 
         if (!countryName == "") {
             // window.location  = "/cases/country/" + countryName;
+
             dispatch(getCountry(countryName));
         }
         else {
@@ -28,7 +29,7 @@ function Search() {
             <div className="parent__search">
                 <div className="inner__search">
                     <div className="search__box">
-                        <input type="text" value={countryName} onChange={(e) => setCountryName(e.target.value)} placeholder='search for any country' className='search__bar' />
+                        <input type="text" value={countryName} onChange={(e) => setCountryName(e.target.value.toLowerCase())} placeholder='search for any country' className='search__bar' />
                     </div>
                     <div className="search__box">
                         <button className='search__button' onClick={DataSet}><BsSearch /></button>
