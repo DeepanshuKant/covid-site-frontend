@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 import { Doughnut } from 'react-chartjs-2'
 import { Chart, ArcElement, Tooltip, Title } from 'chart.js'
-
+import './Graph.css'
 function Graph() {
 
     Chart.register(
@@ -56,8 +56,8 @@ function Graph() {
 
     return (
         <>
-            <div className="main__parent" style={{ width: "30%", margin: "auto" }} >
-                <Doughnut data={newData} />
+            <div className="graph__main__container"  >
+                <Doughnut data={newData} className='doughnut' />
             </div>
         </>
     )
